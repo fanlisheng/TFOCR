@@ -1,0 +1,6 @@
+framework module TFOCR {
+  umbrella header "TFOCR-umbrella.h"
+
+  export *
+  module * { export * }
+}

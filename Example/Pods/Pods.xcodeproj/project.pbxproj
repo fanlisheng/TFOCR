@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C9204326D31D1993297C277750FBFFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		27D031AB63FC046F80848768CA61235D /* TFOCR.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8D432ADEF1F4B3919C24F65EB4087EA /* TFOCR.bundle */; };
+		3BCCD6A2E5B00B14D780EE8FA9A889A7 /* Pods-TFOCR_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127F623DAF49806370209B77413181B /* Pods-TFOCR_Tests-dummy.m */; };
+		89705C03DDB82EFD6895C829262096C7 /* Pods-TFOCR_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B2A2DC5F31CD272726EC2022342EAE /* Pods-TFOCR_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98F92D3FC030DDE9ED75C504633FCEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9ECFBAADBA282553E4067D580C621FAC /* TFOCR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB5A0EF6FB8751B7A28776FC3BA20332 /* TFOCR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF2544BC9C6018652026EFC720BA06F /* TFOCR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3010141EF0BCC2CAE5CE7D6564DBB8F6 /* TFOCR-dummy.m */; };
+		E7DD2357845A746EF26FE2BD53EA0938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E863C65791C6A0E92F77EF0547ACC818 /* Pods-TFOCR_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD71F0E60526BE9FDAA5164F12CA92 /* Pods-TFOCR_Example-dummy.m */; };
+		E8EF0A0C4B9219337E50FDE4E158AF46 /* Pods-TFOCR_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA5A44546E0C8AA89AE5AF297FE579F /* Pods-TFOCR_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE45CDBD9A13DE34212B38FA4795EA4C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4E0C7F5F40FA9D5CDB2FC9FE5C471 /* ReplaceMe.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65503F3B3DF6F22863CB4556B9B627CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B810F64008328B982F3149A1907951EA;
+			remoteInfo = TFOCR;
+		};
+		7F0AF71BE8DC37BC58D813942FDF79B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8199097BF95F358F22E74A715AF1002E;
+			remoteInfo = "Pods-TFOCR_Example";
+		};
+		F58E08C3EEB8857C457D1D559F5F4705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21634C19C3C35DCDCE4F9DA892DA8DAF;
+			remoteInfo = "TFOCR-TFOCR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029672A0DB19D126EE9EABDD6FB8E378 /* Pods-TFOCR_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TFOCR_Example.modulemap"; sourceTree = "<group>"; };
+		06C53265E94DE216B38DC1DA95C5E15B /* TFOCR.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFOCR.xcconfig; sourceTree = "<group>"; };
+		0DA5A44546E0C8AA89AE5AF297FE579F /* Pods-TFOCR_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFOCR_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2127F623DAF49806370209B77413181B /* Pods-TFOCR_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFOCR_Tests-dummy.m"; sourceTree = "<group>"; };
+		259A5CAB5B5E698B9FB587AFE0C989C5 /* TFOCR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TFOCR-Info.plist"; sourceTree = "<group>"; };
+		2E0C9B494E3780B7C35E32FC9F45FBA1 /* Pods-TFOCR_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFOCR_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E18BB83676B2AD839FD9CE79C8CFE16 /* Pods-TFOCR_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFOCR_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2F8D787A4592F16F36ADBB6C4770AF6B /* Pods-TFOCR_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFOCR_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3010141EF0BCC2CAE5CE7D6564DBB8F6 /* TFOCR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFOCR-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36C810E60C9F1370ADC1859765617FC9 /* Pods_TFOCR_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TFOCR_Tests.framework; path = "Pods-TFOCR_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FB4A7368895E5A8667C46F4C61E5AF /* Pods-TFOCR_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFOCR_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A6474AEAFC6BF6013E9C0913989B4B1 /* TFOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TFOCR.framework; path = TFOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9E618685F28F9A19F70885607A22D2 /* Pods-TFOCR_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFOCR_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4730A5C82813313BFE6F22C48DEC2C3B /* Pods-TFOCR_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFOCR_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5705EA2D34F511C254A5962030AE54E6 /* Pods-TFOCR_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFOCR_Tests-Info.plist"; sourceTree = "<group>"; };
+		72FB6563B5A7F01AF6A4F7D566D849C0 /* Pods-TFOCR_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TFOCR_Tests.modulemap"; sourceTree = "<group>"; };
+		8234442E3D002A461B6CFBF05F794699 /* TFOCR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TFOCR.modulemap; sourceTree = "<group>"; };
+		8864CA4B5F4E6AC6615D2C9EAAB0AA3D /* ResourceBundle-TFOCR-TFOCR-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TFOCR-TFOCR-Info.plist"; sourceTree = "<group>"; };
+		93DF7675063058221C3BD432AB22DAE5 /* TFOCR-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFOCR-prefix.pch"; sourceTree = "<group>"; };
+		9637CAFA450F49CFD8AACCF895BD5EFB /* Pods-TFOCR_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFOCR_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A32AA54E744CCB9455B5487F420C31A /* Pods-TFOCR_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFOCR_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9CD5792F3400F48B208E1A63CFF54622 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D12E70FC883FEE4DC04237D829C7A25 /* Pods-TFOCR_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFOCR_Example-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B2B4E0C7F5F40FA9D5CDB2FC9FE5C471 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = TFOCR/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		BB5A0EF6FB8751B7A28776FC3BA20332 /* TFOCR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFOCR-umbrella.h"; sourceTree = "<group>"; };
+		C516AA4D6E32E070F1C55CBA32177A15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D9B2A2DC5F31CD272726EC2022342EAE /* Pods-TFOCR_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFOCR_Example-umbrella.h"; sourceTree = "<group>"; };
+		E7DD71F0E60526BE9FDAA5164F12CA92 /* Pods-TFOCR_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFOCR_Example-dummy.m"; sourceTree = "<group>"; };
+		E9CAD6EB75542C056C22915C78847F5F /* Pods_TFOCR_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TFOCR_Example.framework; path = "Pods-TFOCR_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDDF2EBFA677C04FAF8812B3A557F65 /* TFOCR.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TFOCR.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F7BA2621259CC08FFE1265CA7BED2E80 /* Pods-TFOCR_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFOCR_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F8D432ADEF1F4B3919C24F65EB4087EA /* TFOCR.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TFOCR.bundle; path = "TFOCR-TFOCR.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		120C0208E0B921C7726AEA9C95DDD009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA15413C058B9E6180A893482E86A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F92D3FC030DDE9ED75C504633FCEB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC11BD0312F5B29A09BAF8521617008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9204326D31D1993297C277750FBFFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B926CE64A16F0344E9B83B5B1E08D8F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DD2357845A746EF26FE2BD53EA0938 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E86CD61ED6B11C622E8A37DF3D39E85 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C516AA4D6E32E070F1C55CBA32177A15 /* LICENSE */,
+				9CD5792F3400F48B208E1A63CFF54622 /* README.md */,
+				EDDDF2EBFA677C04FAF8812B3A557F65 /* TFOCR.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		103756AB9D534E0E51E6F993FA586F37 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4C17D316BE3C36E136CECE4F607856D /* TFOCR */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		567FAA41D581E2E608AD656005519AC5 /* Pods-TFOCR_Example */ = {
+			isa = PBXGroup;
+			children = (
+				029672A0DB19D126EE9EABDD6FB8E378 /* Pods-TFOCR_Example.modulemap */,
+				4730A5C82813313BFE6F22C48DEC2C3B /* Pods-TFOCR_Example-acknowledgements.markdown */,
+				9A32AA54E744CCB9455B5487F420C31A /* Pods-TFOCR_Example-acknowledgements.plist */,
+				E7DD71F0E60526BE9FDAA5164F12CA92 /* Pods-TFOCR_Example-dummy.m */,
+				2F8D787A4592F16F36ADBB6C4770AF6B /* Pods-TFOCR_Example-frameworks.sh */,
+				9D12E70FC883FEE4DC04237D829C7A25 /* Pods-TFOCR_Example-Info.plist */,
+				D9B2A2DC5F31CD272726EC2022342EAE /* Pods-TFOCR_Example-umbrella.h */,
+				3F9E618685F28F9A19F70885607A22D2 /* Pods-TFOCR_Example.debug.xcconfig */,
+				F7BA2621259CC08FFE1265CA7BED2E80 /* Pods-TFOCR_Example.release.xcconfig */,
+			);
+			name = "Pods-TFOCR_Example";
+			path = "Target Support Files/Pods-TFOCR_Example";
+			sourceTree = "<group>";
+		};
+		98D2B9B4E987CE6577B4FE7F8AE7D2E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9CAD6EB75542C056C22915C78847F5F /* Pods_TFOCR_Example.framework */,
+				36C810E60C9F1370ADC1859765617FC9 /* Pods_TFOCR_Tests.framework */,
+				F8D432ADEF1F4B3919C24F65EB4087EA /* TFOCR.bundle */,
+				3A6474AEAFC6BF6013E9C0913989B4B1 /* TFOCR.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4C17D316BE3C36E136CECE4F607856D /* TFOCR */ = {
+			isa = PBXGroup;
+			children = (
+				B2B4E0C7F5F40FA9D5CDB2FC9FE5C471 /* ReplaceMe.m */,
+				0E86CD61ED6B11C622E8A37DF3D39E85 /* Pod */,
+				C078932B7B0EA7FEFFE232DCECC2F21C /* Support Files */,
+			);
+			name = TFOCR;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AFB750C9ABAB64AE686304B164EA709A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				567FAA41D581E2E608AD656005519AC5 /* Pods-TFOCR_Example */,
+				CF3C7E9BF3426AD6EE843B0691ED1603 /* Pods-TFOCR_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C078932B7B0EA7FEFFE232DCECC2F21C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8864CA4B5F4E6AC6615D2C9EAAB0AA3D /* ResourceBundle-TFOCR-TFOCR-Info.plist */,
+				8234442E3D002A461B6CFBF05F794699 /* TFOCR.modulemap */,
+				06C53265E94DE216B38DC1DA95C5E15B /* TFOCR.xcconfig */,
+				3010141EF0BCC2CAE5CE7D6564DBB8F6 /* TFOCR-dummy.m */,
+				259A5CAB5B5E698B9FB587AFE0C989C5 /* TFOCR-Info.plist */,
+				93DF7675063058221C3BD432AB22DAE5 /* TFOCR-prefix.pch */,
+				BB5A0EF6FB8751B7A28776FC3BA20332 /* TFOCR-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TFOCR";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				103756AB9D534E0E51E6F993FA586F37 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				98D2B9B4E987CE6577B4FE7F8AE7D2E5 /* Products */,
+				AFB750C9ABAB64AE686304B164EA709A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF3C7E9BF3426AD6EE843B0691ED1603 /* Pods-TFOCR_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				72FB6563B5A7F01AF6A4F7D566D849C0 /* Pods-TFOCR_Tests.modulemap */,
+				9637CAFA450F49CFD8AACCF895BD5EFB /* Pods-TFOCR_Tests-acknowledgements.markdown */,
+				36FB4A7368895E5A8667C46F4C61E5AF /* Pods-TFOCR_Tests-acknowledgements.plist */,
+				2127F623DAF49806370209B77413181B /* Pods-TFOCR_Tests-dummy.m */,
+				5705EA2D34F511C254A5962030AE54E6 /* Pods-TFOCR_Tests-Info.plist */,
+				0DA5A44546E0C8AA89AE5AF297FE579F /* Pods-TFOCR_Tests-umbrella.h */,
+				2E0C9B494E3780B7C35E32FC9F45FBA1 /* Pods-TFOCR_Tests.debug.xcconfig */,
+				2E18BB83676B2AD839FD9CE79C8CFE16 /* Pods-TFOCR_Tests.release.xcconfig */,
+			);
+			name = "Pods-TFOCR_Tests";
+			path = "Target Support Files/Pods-TFOCR_Tests";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12346022FE0FBAFC2047EEE48EBE08A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ECFBAADBA282553E4067D580C621FAC /* TFOCR-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54863354A041FC974B7E4665FF39EF89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89705C03DDB82EFD6895C829262096C7 /* Pods-TFOCR_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0F83766480C3EB930291B7A3E781B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EF0A0C4B9219337E50FDE4E158AF46 /* Pods-TFOCR_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21634C19C3C35DCDCE4F9DA892DA8DAF /* TFOCR-TFOCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E73FA1FC3EFE36CC5F4E549733ADDA1A /* Build configuration list for PBXNativeTarget "TFOCR-TFOCR" */;
+			buildPhases = (
+				AFB59388494B10E1E3AF7A14BDBA3FDD /* Sources */,
+				120C0208E0B921C7726AEA9C95DDD009 /* Frameworks */,
+				07FB637C0B14FCC85172BD0A3DCBBF27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TFOCR-TFOCR";
+			productName = "TFOCR-TFOCR";
+			productReference = F8D432ADEF1F4B3919C24F65EB4087EA /* TFOCR.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5A2592AD996AFD165BF33AE837D9160E /* Pods-TFOCR_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456E29BF299AAA0B376A4C3799DC8DF1 /* Build configuration list for PBXNativeTarget "Pods-TFOCR_Tests" */;
+			buildPhases = (
+				8F0F83766480C3EB930291B7A3E781B4 /* Headers */,
+				518CB022E13DED75E0F5654D4D2BB38D /* Sources */,
+				9FC11BD0312F5B29A09BAF8521617008 /* Frameworks */,
+				8193AD50F84F53A96F76A6D3B471797E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				338672C1B968F63AA0DA52E5B385808D /* PBXTargetDependency */,
+			);
+			name = "Pods-TFOCR_Tests";
+			productName = "Pods-TFOCR_Tests";
+			productReference = 36C810E60C9F1370ADC1859765617FC9 /* Pods_TFOCR_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8199097BF95F358F22E74A715AF1002E /* Pods-TFOCR_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4500DFC94361359D9F3DF4D15A5E2ECF /* Build configuration list for PBXNativeTarget "Pods-TFOCR_Example" */;
+			buildPhases = (
+				54863354A041FC974B7E4665FF39EF89 /* Headers */,
+				2EA7956E19B12B52D4AB837352AE4B5F /* Sources */,
+				4CA15413C058B9E6180A893482E86A22 /* Frameworks */,
+				F17544E5DF9E0DCDCB16CAF7598CE984 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AFC0FC8026ED1AADCB10C9135F74401 /* PBXTargetDependency */,
+			);
+			name = "Pods-TFOCR_Example";
+			productName = "Pods-TFOCR_Example";
+			productReference = E9CAD6EB75542C056C22915C78847F5F /* Pods_TFOCR_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B810F64008328B982F3149A1907951EA /* TFOCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8554281C4A8E80D9CF98CF0101DA7DF2 /* Build configuration list for PBXNativeTarget "TFOCR" */;
+			buildPhases = (
+				12346022FE0FBAFC2047EEE48EBE08A3 /* Headers */,
+				2BC2E2970178A2B94C112275FFA2A6AC /* Sources */,
+				B926CE64A16F0344E9B83B5B1E08D8F2 /* Frameworks */,
+				C31E9091B23BF72D42C2AC218B2C9FE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC97BD3439E6B952F008E2F69E7EC4F7 /* PBXTargetDependency */,
+			);
+			name = TFOCR;
+			productName = TFOCR;
+			productReference = 3A6474AEAFC6BF6013E9C0913989B4B1 /* TFOCR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 98D2B9B4E987CE6577B4FE7F8AE7D2E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8199097BF95F358F22E74A715AF1002E /* Pods-TFOCR_Example */,
+				5A2592AD996AFD165BF33AE837D9160E /* Pods-TFOCR_Tests */,
+				B810F64008328B982F3149A1907951EA /* TFOCR */,
+				21634C19C3C35DCDCE4F9DA892DA8DAF /* TFOCR-TFOCR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07FB637C0B14FCC85172BD0A3DCBBF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8193AD50F84F53A96F76A6D3B471797E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31E9091B23BF72D42C2AC218B2C9FE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D031AB63FC046F80848768CA61235D /* TFOCR.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17544E5DF9E0DCDCB16CAF7598CE984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BC2E2970178A2B94C112275FFA2A6AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE45CDBD9A13DE34212B38FA4795EA4C /* ReplaceMe.m in Sources */,
+				CAF2544BC9C6018652026EFC720BA06F /* TFOCR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA7956E19B12B52D4AB837352AE4B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E863C65791C6A0E92F77EF0547ACC818 /* Pods-TFOCR_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518CB022E13DED75E0F5654D4D2BB38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCCD6A2E5B00B14D780EE8FA9A889A7 /* Pods-TFOCR_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFB59388494B10E1E3AF7A14BDBA3FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		338672C1B968F63AA0DA52E5B385808D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TFOCR_Example";
+			target = 8199097BF95F358F22E74A715AF1002E /* Pods-TFOCR_Example */;
+			targetProxy = 7F0AF71BE8DC37BC58D813942FDF79B6 /* PBXContainerItemProxy */;
+		};
+		5AFC0FC8026ED1AADCB10C9135F74401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TFOCR;
+			target = B810F64008328B982F3149A1907951EA /* TFOCR */;
+			targetProxy = 65503F3B3DF6F22863CB4556B9B627CA /* PBXContainerItemProxy */;
+		};
+		DC97BD3439E6B952F008E2F69E7EC4F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TFOCR-TFOCR";
+			target = 21634C19C3C35DCDCE4F9DA892DA8DAF /* TFOCR-TFOCR */;
+			targetProxy = F58E08C3EEB8857C457D1D559F5F4705 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26B21B80A9614EF05E1BD775F6F9E898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9E618685F28F9A19F70885607A22D2 /* Pods-TFOCR_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFOCR_Example/Pods-TFOCR_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFOCR_Example/Pods-TFOCR_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		934794D9C86D6F30E1599A8ED101D178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BA2621259CC08FFE1265CA7BED2E80 /* Pods-TFOCR_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFOCR_Example/Pods-TFOCR_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFOCR_Example/Pods-TFOCR_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B4469A306F65C206BA618C21FC622FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C53265E94DE216B38DC1DA95C5E15B /* TFOCR.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TFOCR";
+				IBSC_MODULE = TFOCR;
+				INFOPLIST_FILE = "Target Support Files/TFOCR/ResourceBundle-TFOCR-TFOCR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TFOCR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B2860310349D2F9F3057ACB166CA536A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E18BB83676B2AD839FD9CE79C8CFE16 /* Pods-TFOCR_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFOCR_Tests/Pods-TFOCR_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFOCR_Tests/Pods-TFOCR_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAEBC7238D7CE02E40E4BE78E6A5FC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0C9B494E3780B7C35E32FC9F45FBA1 /* Pods-TFOCR_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFOCR_Tests/Pods-TFOCR_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFOCR_Tests/Pods-TFOCR_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3E4C0DD0E4BBFD8169EC5F598B437A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C53265E94DE216B38DC1DA95C5E15B /* TFOCR.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TFOCR";
+				IBSC_MODULE = TFOCR;
+				INFOPLIST_FILE = "Target Support Files/TFOCR/ResourceBundle-TFOCR-TFOCR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TFOCR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F740434F29FE805BB072760666BB81C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C53265E94DE216B38DC1DA95C5E15B /* TFOCR.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFOCR/TFOCR-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFOCR/TFOCR-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TFOCR/TFOCR.modulemap";
+				PRODUCT_MODULE_NAME = TFOCR;
+				PRODUCT_NAME = TFOCR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC97587EE288D3CEED279D85F0E14F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C53265E94DE216B38DC1DA95C5E15B /* TFOCR.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFOCR/TFOCR-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFOCR/TFOCR-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TFOCR/TFOCR.modulemap";
+				PRODUCT_MODULE_NAME = TFOCR;
+				PRODUCT_NAME = TFOCR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4500DFC94361359D9F3DF4D15A5E2ECF /* Build configuration list for PBXNativeTarget "Pods-TFOCR_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B21B80A9614EF05E1BD775F6F9E898 /* Debug */,
+				934794D9C86D6F30E1599A8ED101D178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456E29BF299AAA0B376A4C3799DC8DF1 /* Build configuration list for PBXNativeTarget "Pods-TFOCR_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAEBC7238D7CE02E40E4BE78E6A5FC4A /* Debug */,
+				B2860310349D2F9F3057ACB166CA536A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8554281C4A8E80D9CF98CF0101DA7DF2 /* Build configuration list for PBXNativeTarget "TFOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F740434F29FE805BB072760666BB81C3 /* Debug */,
+				FC97587EE288D3CEED279D85F0E14F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E73FA1FC3EFE36CC5F4E549733ADDA1A /* Build configuration list for PBXNativeTarget "TFOCR-TFOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E4C0DD0E4BBFD8169EC5F598B437A2 /* Debug */,
+				9B4469A306F65C206BA618C21FC622FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

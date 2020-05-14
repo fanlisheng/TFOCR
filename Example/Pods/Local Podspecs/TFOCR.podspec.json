@@ -1,0 +1,30 @@
+{
+  "name": "TFOCR",
+  "version": "0.1.0",
+  "summary": "A short description of TFOCR.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/874112968@qq.com/TFOCR",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "874112968@qq.com": "874112968@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/874112968@qq.com/TFOCR.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TFOCR/Classes/**/*",
+  "resource_bundles": {
+    "TFOCR": [
+      "TFOCR/Assets/ic_car_camera_capture_photo_ok.png",
+      "TFOCR/Assets/ic_car_camera_capture_photo2.png",
+      "TFOCR/Assets/ocrscan.png",
+      "TFOCR/Assets/vcsdt.png"
+    ]
+  }
+}

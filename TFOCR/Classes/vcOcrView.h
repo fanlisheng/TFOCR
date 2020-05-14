@@ -29,11 +29,13 @@ typedef void(^ResultCallBack)(NSString *reuslt, NSInteger index);
 @property (nonatomic, assign) BOOL capture;
 @property (nonatomic, assign) CGRect imgRect;
 @property (nonatomic, assign) CGRect pathRect;
+@property (nonatomic, assign) CGRect showImgRect;
 - (void)setup;
 - (void)start;
 - (void)stop;
 - (void)foucePixel;
 - (void)foucePixelCancle;
+- (void)startLine;
 @property(nonatomic, copy) ResultCallBack resultCB;
 @end
 

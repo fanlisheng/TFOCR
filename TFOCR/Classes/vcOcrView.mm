@@ -10,9 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Utility.h"
 #import "Pipeline.h"
-//屏幕的宽、高
-#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
 @interface vcOcrView()<AVCaptureVideoDataOutputSampleBufferDelegate>{
     AVCaptureSession *_session;
     AVCaptureDeviceInput *_captureInput;
@@ -53,6 +51,7 @@
 @property (nonatomic, strong) UIImageView *showImageView;
 @property (nonatomic, strong) UILabel *resultLabel;
 @property (nonatomic, strong) NSString *resulttext;
+@property (strong, nonatomic) UIImageView *lineImageView;
 @end
 
 @implementation vcOcrView
@@ -177,14 +176,14 @@
     rightBtn.layer.cornerRadius = 28;
     rightBtn.hidden = YES;
     _showImageView = [[UIImageView alloc] init];
-    _showImageView.frame = CGRectMake(kScreenWidth * 0.2, 160 , kScreenWidth * 0.6, 80);
+    _showImageView.frame = _showImgRect;
     [self addSubview:_showImageView];
     _showImageView.hidden = YES;
     
     //二维码
     codeBtn = [[UIButton alloc]initWithFrame:CGRectMake((kScreenWidth-100-112)/2,35, 56, 56)];
     [codeBtn addTarget:self action:@selector(codeAction) forControlEvents:UIControlEventTouchUpInside];
-    [codeBtn setImage:[UIImage imageNamed:@"ocrscan"] forState:UIControlStateNormal];
+    [codeBtn setImage:[UIImage imageNamed:@"运输巡查_车牌识别_扫码"] forState:UIControlStateNormal];
     [shadowView addSubview:codeBtn];
     codeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 20)];
     codeLabel.center = CGPointMake(codeBtn.center.x, codeBtn.center.y+45);
@@ -196,7 +195,7 @@
     
     //手电筒
     lightBtn = [[UIButton alloc]initWithFrame:CGRectMake(codeBtn.frame.origin.x+156,35, 56, 56)];
-    [lightBtn setImage:[UIImage imageNamed:@"vcsdt"] forState:UIControlStateNormal];
+    [lightBtn setImage:[UIImage imageNamed:@"运输巡查_车牌识别_手电筒"] forState:UIControlStateNormal];
     [lightBtn addTarget:self action:@selector(lightClick) forControlEvents:UIControlEventTouchUpInside];
     [shadowView addSubview:lightBtn];
     lightLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 20)];
@@ -207,13 +206,31 @@
     lightLabel.textAlignment = NSTextAlignmentCenter;
     [shadowView addSubview:lightLabel];
     
-    _resultLabel = [[UILabel alloc] initWithFrame:CGRectMake((kScreenWidth-100)/2, 255, 100, 20)];
+    _resultLabel = [[UILabel alloc] initWithFrame:CGRectMake((kScreenWidth-100)/2, _pathRect.origin.y+_pathRect.size.height+5, 100, 20)];
     _resultLabel.textColor = [UIColor whiteColor];
     _resultLabel.textAlignment = NSTextAlignmentCenter;
     _resultLabel.font = [UIFont boldSystemFontOfSize:18];
     _resultLabel.hidden = YES;
     _resultLabel.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
     [self addSubview:_resultLabel];
+    _lineImageView = [UIImageView new];
+    _lineImageView.image = [UIImage imageNamed:@"ic_car_code_orc_search"];
+    _lineImageView.frame = CGRectMake(_pathRect.origin.x, _pathRect.origin.y, _pathRect.size.width, 5);
+    [self addSubview:_lineImageView];
+}
+
+- (void)startLine {
+    WeakSelf
+    _lineImageView.frame = CGRectMake(_pathRect.origin.x, _pathRect.origin.y, _pathRect.size.width, 5);
+    [UIView animateWithDuration:2
+                          delay:0
+                        options:UIViewAnimationOptionRepeat|UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         self.lineImageView.frame = CGRectMake(weakSelf.pathRect.origin.x,
+                                                               weakSelf.pathRect.origin.y+weakSelf.pathRect.size.height-5,
+                                                               CGRectGetWidth(weakSelf.pathRect),
+                                                               5);
+                     } completion:nil];
 }
 
 - (void)codeAction {
@@ -247,11 +264,14 @@
     lightBtn.hidden = !hidden;
     codeLabel.hidden = !hidden;
     lightLabel.hidden = !hidden;
+    _lineImageView.hidden = !hidden;
 }
 
 - (void)backAction {
     [self hiddenChild:YES];
+    [self startLine];
     _isScan = YES;
+    
 }
 
 - (void)rightClick {
@@ -269,6 +289,9 @@
 }
 
 - (void)foucePixel {
+    _isScan = YES;
+    [self hiddenChild:YES];
+    [self startLine];
     _capture = NO;
     [self performSelector:@selector(changeCapture) withObject:nil afterDelay:0.4];
     //不支持相位对焦情况下(iPhone6以后的手机支持相位对焦) 设置定时器 开启连续对焦
@@ -287,6 +310,8 @@
 }
 
 - (void)foucePixelCancle {
+    _isScan = NO;
+    [self.lineImageView.layer removeAllAnimations];
     if (!_isFoucePixel) {
         [_timer invalidate];
         _timer = nil;
@@ -425,7 +450,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
                 if (_isLensChanged == _isIOS8AndFoucePixelLensPosition) {
                     _count++;
                     if (_count >= _MaxFR) {
-                        
+
                         //识别
                         UIImage *temp_image = [Utility scaleAndRotateImageBackCamera:self.image rect:_imgRect];
                         source_image = [Utility cvMatFromUIImage:temp_image];
@@ -455,6 +480,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 //找边成功开始拍照
 - (void)readyToGetImage:(NSDictionary *)resultDict
 {
+    [_lineImageView.layer removeAllAnimations];
     _showImageView.image = _cImage;
     [self hiddenChild:NO];
     _resultLabel.text = _resulttext;

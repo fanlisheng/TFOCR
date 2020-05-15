@@ -18,13 +18,15 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TFOCR/Classes/**/*",
+  "source_files": "TFOCR/Classes/**/**/**/*",
   "resource_bundles": {
     "TFOCR": [
-      "TFOCR/Assets/ic_car_camera_capture_photo_ok.png",
-      "TFOCR/Assets/ic_car_camera_capture_photo2.png",
-      "TFOCR/Assets/ocrscan.png",
-      "TFOCR/Assets/vcsdt.png"
+      "TFOCR/Assets/*"
+    ]
+  },
+  "dependencies": {
+    "OpenCV": [
+      "~> 3.4.2"
     ]
   }
 }
